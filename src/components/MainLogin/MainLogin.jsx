@@ -19,6 +19,7 @@ const MainLogin = () => {
       header = "Empty Values :(";
       desc = "One or more input fields are empty";
     }
+
     modalRef.current.Open(header, desc);
   };
 
