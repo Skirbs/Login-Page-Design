@@ -12,7 +12,26 @@
   input {
     @apply outline-none;
   }
+
+  dialog {
+    opacity: 0;
+  }
+
+  dialog[open] {
+    animation: fade-in-up 0.5s forwards;
+  }
 }
 
 @layer components {
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-0px);
+    opacity: 1;
+  }
 }

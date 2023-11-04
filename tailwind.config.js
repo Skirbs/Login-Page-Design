@@ -14,6 +14,15 @@ export default {
         "blob-image": 'url("./assets/Blob_Background.svg")',
         "layered-image": 'url("./assets/Layered_Background2.svg")',
       },
+      animation: {
+        "fade-in-up": "fade-in-up 0.5s forwards",
+      },
+      keyframes: {
+        "fade-in-up": {
+          "0%": "transform: translateY(-200px) opacity: 0",
+          "100%": "transform: translateY(0px) opacity: 100",
+        },
+      },
     },
   },
   plugins: [],
