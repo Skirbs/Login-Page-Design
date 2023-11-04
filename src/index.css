@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-sans text-green-950 text-lg box-border;
+  }
+  body {
+  }
+
+  input {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+}
